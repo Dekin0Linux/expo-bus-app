@@ -2,7 +2,7 @@ import { View, Text ,ScrollView,ImageBackground} from 'react-native'
 import React from 'react'
 import { Button } from 'react-native';
 
-const Seats = ({navigation}) => {
+const UserDetail = ({navigation}) => {
   return (
     <ScrollView showsVerticalScrollIndicator={false} className="flex-1 bg-white">
       <ImageBackground
@@ -11,11 +11,11 @@ const Seats = ({navigation}) => {
       />
 
       <View className="px-10 bg-white shadow">
-        <Text>Select Seats</Text>
-        <Button onPress={()=>navigation.navigate('Tickets')} title='View Ticket'/>
+        <Text>User Details</Text>
+        <Button onPress={()=>navigation.navigate('Seats')} title='Seats'/>
       </View>
     </ScrollView>
   )
 }
 
-export default Seats;
+export default UserDetail;
